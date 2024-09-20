@@ -1,0 +1,17 @@
+rabbitmqCluster:
+  name: rabbitmq
+  replicas: 1
+
+  service:
+    type: ClusterIP
+
+  persistence:
+    storage: 2Gi
+
+  resources:
+    requests:
+      cpu: 50m
+      memory: 256Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
